@@ -1,7 +1,7 @@
-export default function NavButton() {
+export default function NavButton({children}: {children: React.ReactNode}) {
     return (
         <>
-
+            <button>{children}</button>
         </>
     )
 }

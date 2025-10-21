@@ -1,8 +1,16 @@
+import NavBar from "./components/Navigation/NavBar.tsx";
+import About from "./components/About/About.tsx";
+import Skills from "./components/Skills/Skills.tsx";
+import Portfolio from "./components/Portfolio/Portfolio.tsx";
 
 export function App() {
 
   return (
-    <>
-    </>
+    <div className="container mx-auto pt-5">
+        <NavBar/>
+        <About/>
+        <Skills/>
+        <Portfolio/>
+    </div>
   )
 }
