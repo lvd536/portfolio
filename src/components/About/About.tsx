@@ -4,7 +4,7 @@ import Stack from "./Stack.tsx";
 
 export default function About() {
     return (
-        <section id="about" className="py-24 flex justify-between">
+        <section id="about" className="pb-24 py-44 flex justify-between">
             <div className="flex flex-col">
                 <Title/>
                 <Button>Let's check!</Button>

@@ -10,14 +10,12 @@ import react from '../../assets/langs/react.svg'
 import database from '../../assets/langs/database.svg'
 import testCase from '../../assets/portfolio/testCase.jpg'
 import PortfolioCard from "./PortfolioCard.tsx";
+import Header from "../Header.tsx";
 
 export default function Portfolio() {
     return (
         <section id="portfolio" className="mt-25">
-            <div className="flex gap-2 text-4xl mb-5">
-                <span className="text-indigo-500">My</span>
-                <span>portfolio</span>
-            </div>
+            <Header word1={'My'} word2={'portfolio'}/>
             <PortfolioCard
                 skills={[html, css, scss, typescript, javascript, react, csharp]}
                 header='Test Header'

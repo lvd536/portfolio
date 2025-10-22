@@ -12,7 +12,7 @@ export default function NavBar() {
         })
     })
     return (
-        <div className={`fixed w-full left-0 ${isScrolled && 'bg-(--dark-bg-color) shadow-lg shadow-black/50 transition-shadow duration-600'}`}>
+        <div className={`fixed w-full left-0 ${isScrolled ? 'pt-0' : 'pt-5'} ${isScrolled && 'bg-(--dark-bg-color) shadow-lg shadow-black/50 transition-shadow transition-padding duration-600'}`}>
             <div className={`flex items-center justify-between container mx-auto`}>
                 <Logo/>
                 <div className="flex gap-10">

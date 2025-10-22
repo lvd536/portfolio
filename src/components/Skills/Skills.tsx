@@ -13,7 +13,6 @@ export default function Skills() {
                <Item>BEM</Item>
                <Item>Git (GitHub, BitBucket, GitLab)</Item>
                <Item>Vite</Item>
-
            </SkillCard>
             <SkillCard header="Soft">
                 <Item>I am responsible about deadlines</Item>
