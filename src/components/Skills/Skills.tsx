@@ -12,7 +12,7 @@ export default function Skills() {
                <Item>Zustand</Item>
                <Item>BEM</Item>
                <Item>Git (GitHub, BitBucket, GitLab)</Item>
-               <Item>Zustand</Item>
+               <Item>Vite</Item>
 
            </SkillCard>
             <SkillCard header="Soft">
