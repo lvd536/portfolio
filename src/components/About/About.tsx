@@ -1,6 +1,6 @@
 import Button from "./Button.tsx";
 import Title from "./Title.tsx";
-import Stack from "./Stack/Stack.tsx";
+import Stack from "./Stack.tsx";
 
 export default function About() {
     return (
@@ -9,7 +9,7 @@ export default function About() {
                 <Title/>
                 <Button>Let's check!</Button>
             </div>
-            <Stack></Stack>
+            <Stack/>
         </section>
     )
 }

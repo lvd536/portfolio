@@ -6,7 +6,7 @@ import Portfolio from "./components/Portfolio/Portfolio.tsx";
 export function App() {
 
   return (
-    <div className="container mx-auto pt-5">
+    <div className="container mx-auto">
         <NavBar/>
         <About/>
         <Skills/>

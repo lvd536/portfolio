@@ -1,7 +1,7 @@
-export default function NavButton({children}: {children: React.ReactNode}) {
+export default function NavButton({children, section}: {children: React.ReactNode, section: string}) {
     return (
         <>
-            <button>{children}</button>
+            <a href={`#${section}`}>{children}</a>
         </>
     )
 }

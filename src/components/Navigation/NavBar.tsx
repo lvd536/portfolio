@@ -1,18 +1,28 @@
 import NavButton from "./NavButton.tsx";
 import Logo from "./Logo.tsx";
 import ThemeToggle from "./ThemeToggle.tsx";
+import {useEffect, useState} from "react";
 
 export default function NavBar() {
+    const [isScrolled, setIsScrolled] = useState<boolean>(false)
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) setIsScrolled(true)
+            else setIsScrolled(false)
+        })
+    })
     return (
-        <div className="flex items-center justify-between">
-            <Logo/>
-            <div className="flex gap-10">
-                <NavButton>About</NavButton>
-                <NavButton>Skills</NavButton>
-                <NavButton>Portfolio</NavButton>
-                <NavButton>Contacts</NavButton>
+        <div className={`fixed w-full left-0 ${isScrolled && 'bg-(--dark-bg-color) shadow-lg shadow-black/50 transition-shadow duration-600'}`}>
+            <div className={`flex items-center justify-between container mx-auto`}>
+                <Logo/>
+                <div className="flex gap-10">
+                    <NavButton section={'about'}>About</NavButton>
+                    <NavButton section={'skills'}>Skills</NavButton>
+                    <NavButton section={'portfolio'}>Portfolio</NavButton>
+                    <NavButton section={'contacts'}>Contacts</NavButton>
+                </div>
+                <ThemeToggle/>
             </div>
-            <ThemeToggle/>
         </div>
     )
 }
