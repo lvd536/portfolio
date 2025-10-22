@@ -1,5 +1,5 @@
-import sun from '../../assets/sun.svg'
-import moon from '../../assets/moon.svg'
+import sun from '../../assets/theme/sun.svg'
+import moon from '../../assets/theme/moon.svg'
 
 export default function ThemeToggle() {
     return (
