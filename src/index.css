@@ -15,7 +15,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --dark-bg-color: #191820;
-  --box-shadow-date: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
+  --box-shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
+  --box-shadow-custom: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px black;
   --box-shadow-custom-black: 0px 0px 20px rgba(0, 0, 0, .8);
     /*0_0px_20px_rgba(0,0,0,.8)*/
 }

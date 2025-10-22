@@ -13,16 +13,16 @@ import Skill from "../Skill.tsx";
 export default function Stack() {
     return (
         <ul className="grid grid-cols-5 gap-5">
-            <Skill image={csharp} size={10}/>
-            <Skill image={css} size={10}/>
-            <Skill image={scss} size={10}/>
-            <Skill image={html} size={10}/>
-            <Skill image={javascript} size={8}/>
-            <Skill image={typescript} size={8}/>
-            <Skill image={react} size={10}/>
-            <Skill image={zustand} size={10}/>
-            <Skill image={telegram} size={10}/>
-            <Skill image={database} size={8}/>
+            <Skill image={csharp}/>
+            <Skill image={css}/>
+            <Skill image={scss}/>
+            <Skill image={html}/>
+            <Skill image={javascript}/>
+            <Skill image={typescript}/>
+            <Skill image={react}/>
+            <Skill image={zustand}/>
+            <Skill image={telegram}/>
+            <Skill image={database}/>
         </ul>
     )
 }
