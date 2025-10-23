@@ -6,10 +6,10 @@ import Skill from "../Skill.tsx";
 export default function Contact() {
     return (
         <section id="contacts">
-            <div className="shadow-(--box-shadow-custom) w-full flex flex-col gap-8 relative rounded-4xl px-8 py-12 my-15" id="contact">
+            <div className="bg-custom-light dark:bg-bg-dark shadow-(--box-shadow-custom-1) w-full flex flex-col gap-8 relative rounded-4xl px-8 py-12 my-15" id="contact">
                 <div className="flex items-center justify-between">
                     <div className="flex flex-col">
-                        <span className="text-4xl">Do you want to ask</span>
+                        <span className="text-4xl text-black dark:text-white">Do you want to ask</span>
                         <span className="text-indigo-500 text-4xl">something interesting?</span>
                     </div>
                     <ul className="flex gap-5">
@@ -22,8 +22,8 @@ export default function Contact() {
                     </ul>
                 </div>
                 <div className="flex items-center justify-between">
-                    <span className="text-s">Contact me. I am online mon-fri from 8 am to 8 pm (gmt).</span>
-                    <span className="text-s">© lvd. 2025</span>
+                    <span className="text-s text-black dark:text-white">Contact me. I am online mon-fri from 8 am to 8 pm (gmt).</span>
+                    <span className="text-s text-black dark:text-white">© lvd. 2025</span>
                 </div>
             </div>
         </section>

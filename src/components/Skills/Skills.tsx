@@ -1,5 +1,5 @@
 import SkillCard from "./SkillCard.tsx";
-import Item from "../DateItem.tsx";
+import Item from "./Item.tsx";
 
 export default function Skills() {
     return (

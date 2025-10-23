@@ -1,6 +1,4 @@
 import Skill from "../Skill.tsx";
-import javascript from '../../assets/langs/javascript.svg';
-import typescript from '../../assets/langs/typescript.svg';
 
 export default function PortfolioCard({header, dateTime, dateString, description, skills, projectImage}: {
     header: string,
@@ -11,12 +9,12 @@ export default function PortfolioCard({header, dateTime, dateString, description
     projectImage: string
 }) {
     return (
-        <div className="flex gap-[10vw] mt-10 shadow-(--box-shadow-custom-black) rounded-xl p-10">
+        <div className="flex bg-custom-light dark:bg-bg-dark gap-[10vw] mt-10 shadow-(--box-shadow-custom-2) rounded-xl p-10">
             <img src={projectImage} alt="" className="max-w-100 max-h-100 rounded-lg"/>
             <div className="flex flex-col w-full gap-8">
                 <time className="w-fit text-indigo-500 font-medium shadow-(--box-shadow-inset) rounded-2xl p-2 px-5" dateTime={dateTime}>{dateString}</time>
-                <span className="text-4xl">{header}</span>
-                <span>{description}</span>
+                <span className="text-4xl text-black dark:text-white">{header}</span>
+                <span className="text-black dark:text-white">{description}</span>
                 <ul className="flex flex-wrap gap-4">
                     {skills.map((skill, index) => (
                         <Skill key={index} image={skill}/>

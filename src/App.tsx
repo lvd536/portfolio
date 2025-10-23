@@ -5,14 +5,13 @@ import Portfolio from "./components/Portfolio/Portfolio.tsx";
 import Contact from "./components/Contact/Contact.tsx";
 
 export function App() {
-
-  return (
-    <div className="container mx-auto">
-        <NavBar/>
-        <About/>
-        <Skills/>
-        <Portfolio/>
-        <Contact/>
-    </div>
-  )
+    return (
+        <div className={`container mx-auto`}>
+            <NavBar/>
+            <About/>
+            <Skills/>
+            <Portfolio/>
+            <Contact/>
+        </div>
+    )
 }

@@ -1,22 +1,31 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+    --color-bg: #fff;
+    --color-bg-dark: #191820;
+    --color-custom-light: #ececec;
+    --box-shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
+    --box-shadow-custom-1: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px rgba(185, 185, 185, .8);
+    --box-shadow-custom-2: 0px 0px 20px rgba(185, 185, 185, .8);
+    --box-shadow-custom-3: 0 0px 20px  rgba(185, 185, 185, .8);
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
+  background-color: #fff;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #191820;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --dark-bg-color: #191820;
-  --box-shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
-  --box-shadow-custom: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px black;
-  --box-shadow-custom-black: 0px 0px 20px rgba(0, 0, 0, .8);
-    /*0_0px_20px_rgba(0,0,0,.8)*/
+}
+
+.dark {
+    background-color: #191820;
+    --box-shadow-custom-1: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px black;
+    --box-shadow-custom-2: 0px 0px 20px rgba(0, 0, 0, .8);
+    --box-shadow-custom-3: 0 0px 20px  rgba(200, 200, 200, .15);
 }
