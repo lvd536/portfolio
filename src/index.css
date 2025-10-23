@@ -4,7 +4,7 @@
 @theme {
     --color-bg: #fff;
     --color-bg-dark: #191820;
-    --color-custom-light: #d8d8d8;
+    --color-custom-light: #dcdcdc;
     --box-shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
     --box-shadow-custom-1: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px rgba(185, 185, 185, .8);
     --box-shadow-custom-2: 0px 0px 20px rgba(185, 185, 185, .8);
@@ -12,6 +12,8 @@
 }
 
 :root {
+  transition: all;
+  transition-duration: .4s;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
