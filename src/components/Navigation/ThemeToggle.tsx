@@ -12,7 +12,7 @@ export default function ThemeToggle() {
 
     return (
         <>
-            <div className="flex bg-custom-light dark:bg-bg-dark relative items-center shadow-(--box-shadow-custom-1) justify-between rounded-full w-22.5 h-11.5 hover:ring-1 ring-indigo-500 transition-all duration-500" onClick={() => handleClick()}>
+            <div className="flex bg-custom-light dark:bg-bg-dark relative items-center shadow-(--box-shadow-custom-1) justify-between rounded-full w-22.5 h-11.5 hover:ring-1 ring-indigo-500 transition-borders duration-500" onClick={() => handleClick()}>
                 <button className="w-11.5 h-11.5 flex items-center justify-center relative rounded-full z-1">
                     <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
                         <path
