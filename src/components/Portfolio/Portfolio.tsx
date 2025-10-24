@@ -11,8 +11,11 @@ import database from '../../assets/langs/database.svg'
 import testCase from '../../assets/portfolio/testCase.jpg'
 import PortfolioCard from "./PortfolioCard.tsx";
 import Header from "../Header.tsx";
+import Modal from './Modal/Modal.tsx'
+import { useIsModal } from '../../store/useModalStore.tsx'
 
 export default function Portfolio() {
+    const isModal = useIsModal()
     return (
         <section id="portfolio" className="mt-25">
             <Header word1={'My'} word2={'portfolio'}/>
@@ -32,6 +35,7 @@ export default function Portfolio() {
                 description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic'
                 projectImage={testCase}
             />
+            {isModal && <Modal/>}
         </section>
     )
 }
