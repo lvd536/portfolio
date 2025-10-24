@@ -9,7 +9,7 @@ export default function PortfolioCard({header, dateTime, dateString, description
     projectImage: string
 }) {
     return (
-        <div className="flex bg-custom-light dark:bg-bg-dark gap-[10vw] mt-10 shadow-(--box-shadow-custom-2) rounded-xl p-10">
+        <div className="flex bg-custom-light dark:bg-bg-dark gap-[10vw] mt-10 transition-shadow duration-300 shadow-(--box-shadow-custom-2) hover:shadow-(--box-shadow-custom-hover) rounded-xl p-10">
             <img src={projectImage} alt="" className="max-w-100 max-h-100 rounded-lg"/>
             <div className="flex flex-col w-full gap-8">
                 <time className="w-fit text-indigo-500 font-medium shadow-(--box-shadow-inset) rounded-2xl p-2 px-5" dateTime={dateTime}>{dateString}</time>

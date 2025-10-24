@@ -9,6 +9,9 @@
     --box-shadow-custom-1: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px rgba(185, 185, 185, .8);
     --box-shadow-custom-2: 0px 0px 20px rgba(185, 185, 185, .8);
     --box-shadow-custom-3: 0 0px 20px  rgba(185, 185, 185, .8);
+    --box-shadow-custom-3-transparent: -8px -8px 12px hsla(0,0%,100%,0),8px 8px 12px transparent;
+    --box-shadow-custom-inset: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .35);
+    --box-shadow-custom-hover: var(--box-shadow-custom-3-transparent), var(--box-shadow-custom-inset);
 }
 
 :root {
@@ -30,4 +33,7 @@
     --box-shadow-custom-1: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px black;
     --box-shadow-custom-2: 0px 0px 20px rgba(0, 0, 0, .8);
     --box-shadow-custom-3: 0 0px 20px  rgba(200, 200, 200, .15);
+    --box-shadow-custom-3-transparent: -4px -4px 12px hsla(0, 0%, 100%, 0), 4px 4px 12px transparent;
+    --box-shadow-custom-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
+    --box-shadow-custom-hover: var(--box-shadow-custom-3-transparent), var(--box-shadow-custom-inset);
 }
