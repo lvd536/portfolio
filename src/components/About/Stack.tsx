@@ -12,7 +12,7 @@ import Skill from "../Skill.tsx";
 
 export default function Stack() {
     return (
-        <ul className="grid grid-cols-5 gap-5">
+        <ul className="hidden lg:grid grid-cols-5 gap-5">
             <Skill image={csharp}/>
             <Skill image={css}/>
             <Skill image={scss}/>

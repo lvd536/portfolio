@@ -3,7 +3,7 @@ import Item from "./Item.tsx";
 
 export default function Skills() {
     return (
-        <section className="flex justify-between gap-[5vw]" id="skills">
+        <section className="flex flex-col md:flex-row justify-between gap-[5vw]" id="skills">
            <SkillCard header="Hard">
                <Item>HTML (HTML5), JSX</Item>
                <Item>CSS (CSS3), SASS (SCSS), Tailwind, Animations</Item>
