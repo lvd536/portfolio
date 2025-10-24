@@ -1,4 +1,5 @@
 import {create} from "zustand/react";
+import {persist} from "zustand/middleware";
 import {immer} from "zustand/middleware/immer";
 
 interface ITheme {
@@ -7,12 +8,12 @@ interface ITheme {
 }
 
 const useThemeStore = create<ITheme>()(
-    immer((set, get) => ({
+    immer(persist((set, get) => ({
         theme: 'dark',
         switchTheme: () => {
-            set({theme: `${get().theme === 'dark' ? 'light' : 'dark'}`})
+            set({theme: `${get().theme === 'dark' ? 'light' : 'dark'}`}, false)
         },
-    }))
+    }), {name: 'themeStorage'}))
 )
 
 export const useTheme = () => useThemeStore((s) => s.theme);
