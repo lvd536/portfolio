@@ -9,7 +9,7 @@ export default function Bar() {
     });
   };
   return (
-    <div>
+    <div className="block sm:hidden">
       {!isBurgerOpen && <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
