@@ -17,6 +17,7 @@
     --animate-custom-bounceX-alternative: custom-bounceX-alternative 1s ease-in-out;
     --animate-custom-bounceY: custom-bounceY 1s ease-in-out;
     --animate-custom-typing: typing 4.5s steps(35, end) forwards;
+    --animate-custom-modal: modal .35s ease;
 
     @keyframes custom-bounceX {
       0% {
@@ -57,6 +58,14 @@
       }
       to {
         width: 100%;
+      }
+    }
+     @keyframes modal {
+      0% {
+        scale: 0;
+      }
+      100% {
+        scale: 1;
       }
     }
 }
