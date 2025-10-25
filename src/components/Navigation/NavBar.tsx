@@ -6,10 +6,12 @@ import {useEffect, useState} from "react";
 export default function NavBar() {
     const [isScrolled, setIsScrolled] = useState<boolean>(false)
     useEffect(() => {
-        window.addEventListener('scroll', () => {
+        const handleScroll = () => {
             if (window.scrollY > 0) setIsScrolled(true)
             else setIsScrolled(false)
-        })
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
     })
     return (
         <div className={`fixed z-2  w-full left-0 ${isScrolled ? 'pt-0' : 'pt-5'} ${isScrolled && 'bg-bg dark:bg-bg-dark shadow-lg shadow-black/50 transition-shadow transition-padding duration-600'}`}>
