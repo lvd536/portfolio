@@ -1,28 +1,19 @@
-import csharp from '../../assets/langs/csharp.svg'
-import css from '../../assets/langs/css.svg'
-import html from '../../assets/langs/html.svg'
-import typescript from '../../assets/langs/typescript.svg'
-import javascript from '../../assets/langs/javascript.svg'
-import scss from '../../assets/langs/scss.svg'
-import zustand from '../../assets/langs/zustand.svg'
-import telegram from '../../assets/langs/telegram.svg'
-import react from '../../assets/langs/react.svg'
-import database from '../../assets/langs/database.svg'
+import * as langs from '../../assets/langs/index.ts'
 import Skill from "../Skill.tsx";
 
 export default function Stack() {
     return (
         <ul className="hidden lg:grid grid-cols-5 gap-5">
-            <Skill image={csharp}/>
-            <Skill image={css}/>
-            <Skill image={scss}/>
-            <Skill image={html}/>
-            <Skill image={javascript}/>
-            <Skill image={typescript}/>
-            <Skill image={react}/>
-            <Skill image={zustand}/>
-            <Skill image={telegram}/>
-            <Skill image={database}/>
+            <Skill image={langs.csharp}/>
+            <Skill image={langs.css}/>
+            <Skill image={langs.scss}/>
+            <Skill image={langs.html}/>
+            <Skill image={langs.javascript}/>
+            <Skill image={langs.typescript}/>
+            <Skill image={langs.react}/>
+            <Skill image={langs.zustand}/>
+            <Skill image={langs.telegram}/>
+            <Skill image={langs.database}/>
         </ul>
     )
 }

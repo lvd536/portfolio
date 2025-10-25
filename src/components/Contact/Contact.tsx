@@ -1,5 +1,5 @@
-import github from '../../assets/contact/github.svg'
-import telegram from '../../assets/langs/telegram.svg'
+import {github} from '../../assets/contact/index.ts'
+import {telegram} from '../../assets/langs/index.ts'
 
 import Skill from "../Skill.tsx";
 

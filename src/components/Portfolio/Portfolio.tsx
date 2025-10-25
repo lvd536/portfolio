@@ -1,16 +1,6 @@
-import csharp from '../../assets/langs/csharp.svg'
-import css from '../../assets/langs/css.svg'
-import html from '../../assets/langs/html.svg'
-import typescript from '../../assets/langs/typescript.svg'
-import javascript from '../../assets/langs/javascript.svg'
-import scss from '../../assets/langs/scss.svg'
-import zustand from '../../assets/langs/zustand.svg'
-import telegram from '../../assets/langs/telegram.svg'
-import react from '../../assets/langs/react.svg'
-import database from '../../assets/langs/database.svg'
-import tailwind from '../../assets/langs/tailwind.svg'
-import shovel from '../../assets/portfolio/shovel.jpg'
-import portfolio from '../../assets/portfolio/portfolio.jpg'
+import * as langs from '../../assets/langs/index.ts'
+import * as portfolioImages from '../../assets/portfolio/index.ts'
+
 import PortfolioCard from "./PortfolioCard.tsx";
 import Header from "../Header.tsx";
 import Modal from './Modal/Modal.tsx'
@@ -22,20 +12,20 @@ export default function Portfolio() {
         <section id="portfolio" className="mt-25">
             <Header word1={'My'} word2={'portfolio'}/>
             <PortfolioCard
-                skills={[html, css, tailwind, typescript, javascript, react, database, zustand]}
+                skills={[langs.html, langs.css, langs.tailwind, langs.typescript, langs.javascript, langs.react, langs.database, langs.zustand]}
                 header='Portfolio'
                 dateTime='2025-10'
                 dateString='October 2025'
                 description='Minimalistic portfolio based on SPA with integration of several technologies: Vite, TypeScript, React, Html. CSS, Tailwind 4, Zustand etc.'
-                projectImage={portfolio}
+                projectImage={portfolioImages.portfolio}
             />
             <PortfolioCard
-                skills={[html, css, scss, typescript, javascript, react, database, zustand, telegram]}
+                skills={[langs.html, langs.css, langs.scss, langs.typescript, langs.javascript, langs.react, langs.database, langs.zustand, langs.telegram]}
                 header='Hamster Combat Clone'
                 dateTime='2025-09'
                 dateString='September 2025'
                 description='Hamster Combat V1 Telegram WebApp clone with integration of several technologies: Vite, TypeScript, React, Html. CSS, SCSS, Zustand, Supabase etc.'
-                projectImage={shovel}
+                projectImage={portfolioImages.shovel}
             />
             {isModal && <Modal/>}
         </section>
