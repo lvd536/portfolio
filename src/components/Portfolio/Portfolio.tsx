@@ -27,6 +27,14 @@ export default function Portfolio() {
                 description='Hamster Combat V1 Telegram WebApp clone with integration of several technologies: Vite, TypeScript, React, Html. CSS, SCSS, Zustand, Supabase etc.'
                 projectImage={portfolioImages.shovel}
             />
+            <PortfolioCard
+                skills={[langs.html, langs.css, langs.typescript, langs.javascript, langs.react, langs.zustand]}
+                header='To-Do List'
+                dateTime='2025-10'
+                dateString='October 2025'
+                description='Minimalistic todo list app based on SPA with integration of several technologies: Vite, TypeScript, React, Html. CSS, Tailwind 4, Zustand etc.'
+                projectImage={portfolioImages.todoList}
+            />
             {isModal && <Modal/>}
         </section>
     )
