@@ -1,11 +1,12 @@
-export {default as csharp} from './csharp.svg'
-export {default as css} from './css.svg'
-export {default as database} from './database.svg'
-export {default as html} from './html.svg'
-export {default as javascript} from './javascript.svg'
-export {default as react} from './react.svg'
-export {default as scss} from './scss.svg'
-export {default as tailwind} from './tailwind.svg'
-export {default as telegram} from './telegram.svg'
-export {default as typescript} from './typescript.svg'
-export {default as zustand} from './zustand.svg'
+export { default as csharp } from "./csharp.svg";
+export { default as css } from "./css.svg";
+export { default as database } from "./database.svg";
+export { default as html } from "./html.svg";
+export { default as javascript } from "./javascript.svg";
+export { default as react } from "./react.svg";
+export { default as scss } from "./scss.svg";
+export { default as tailwind } from "./tailwind.svg";
+export { default as telegram } from "./telegram.svg";
+export { default as typescript } from "./typescript.svg";
+export { default as zustand } from "./zustand.svg";
+export { default as router } from "./router.svg";
